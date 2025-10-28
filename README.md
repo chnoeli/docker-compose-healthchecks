@@ -34,7 +34,6 @@ healthcheck:
 
 Sources: [[1]](https://github.com/containrrr/watchtower/issues/1257#issuecomment-2459106937)
 
-
 ## Portainer
 
 ```yml
@@ -43,6 +42,16 @@ healthcheck:
 ```
 
 Sources: [[1]](https://github.com/portainer/agent/blob/develop/cmd/healthy/README.md)
+
+## henrygd/beszel-agent
+
+```yml
+healthcheck:
+  test: ['CMD', '/agent', 'health']
+  interval: 120s
+```
+
+Sources: [[1]](https://beszel.dev/guide/healthchecks)
 
 ## Related
 
