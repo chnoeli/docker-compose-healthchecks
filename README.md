@@ -14,6 +14,13 @@ healthcheck:
 
 Sources: [[1]](https://doc.traefik.io/traefik/reference/install-configuration/observability/healthcheck/)
 
+### filebrowser/filebrowser
+
+```yml
+healthcheck:
+  test: "wget --tries=1 --no-verbose --spider http://localhost/health || exit 1"
+```
+
 ## Related
 
 - [rodrigobdz/docker-compose-healthchecks q](https://github.com/rodrigobdz/docker-compose-healthchecks)
