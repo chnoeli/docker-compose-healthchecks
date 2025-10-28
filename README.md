@@ -35,6 +35,15 @@ healthcheck:
 Sources: [[1]](https://github.com/containrrr/watchtower/issues/1257#issuecomment-2459106937)
 
 
+## Portainer
+
+```yml
+healthcheck:
+  test: ["CMD", "healthy"]
+```
+
+Sources: [[1]](https://github.com/portainer/agent/blob/develop/cmd/healthy/README.md)
+
 ## Related
 
 - [rodrigobdz/docker-compose-healthchecks q](https://github.com/rodrigobdz/docker-compose-healthchecks)
